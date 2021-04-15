@@ -9,7 +9,7 @@ import org.springframework.web.client.RestTemplate;
 import java.time.Duration;
 
 @Configuration
-public class APPConfig {
+public class AppConfig {
 
     @Bean
     public ModelMapper modelMapper(){

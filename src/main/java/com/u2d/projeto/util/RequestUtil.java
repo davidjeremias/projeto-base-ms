@@ -32,8 +32,8 @@ public class RequestUtil {
 
     public static HttpHeaders createHeadersMediaTypeAndCharset() {
         HttpHeaders headers = new HttpHeaders();
-        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON_UTF8));
-        headers.setContentType(MediaType.APPLICATION_JSON_UTF8);
+        headers.setAccept(MediaType.parseMediaTypes(MediaType.APPLICATION_JSON_VALUE));
+        headers.setContentType(MediaType.parseMediaType(MediaType.APPLICATION_JSON_VALUE));
         return headers;
     }
 }

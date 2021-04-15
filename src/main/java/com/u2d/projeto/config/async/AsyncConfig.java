@@ -21,15 +21,4 @@ public class AsyncConfig {
         executor.setThreadNamePrefix("ThreadAppExecutor-");
         return executor;
     }
-
-    @Bean(name = "getCNPJExecutor")
-    public Executor getCNPJExecutor() {
-        final ThreadPoolTaskExecutor executor = new ThreadPoolTaskExecutor();
-        executor.setCorePoolSize(3);
-        executor.setMaxPoolSize(3);
-        executor.setQueueCapacity(1000);
-        executor.setKeepAliveSeconds(20);
-        executor.setThreadNamePrefix("ThreadGetCNPJExecutor-");
-        return executor;
-    }
 }
